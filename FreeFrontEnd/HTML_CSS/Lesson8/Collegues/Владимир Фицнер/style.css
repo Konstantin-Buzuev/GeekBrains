@@ -1,0 +1,1245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(img/back.png);
+}
+
+clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.slider {
+    height: 800px;
+    background-image: url('img/slider-img.jpg');
+    position: relative;
+}
+
+/* featured-new*/
+.featured {
+    height: 609px;
+
+}
+
+.promo-product {
+    height: 683px;
+}
+
+
+.mobile-app {
+    height: 516px;
+}
+
+.trending-products {
+    height: 1108px;
+}
+
+.hotdeals {
+    height: 800px;
+}
+
+/* ------------------------------------ */
+
+.slider .header {
+    padding-top: 63px;
+}
+
+.padding-site {
+    padding-left: 98px;
+    padding-right: 98px;
+
+}
+
+.menu {
+    float: right;
+}
+
+.menu-list {
+    list-style-type: none;
+    float: left;
+}
+
+.menu-link {
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 13px;
+}
+
+.menu-link:hover {
+    color: #212131
+}
+
+.menu-link-active {
+    color: #212121;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    border-bottom: 3px solid #212121;
+
+}
+
+.slider-text {
+    margin-top: 283px;
+}
+
+.slider-trending {
+    color: #43a047;
+
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+}
+
+.slider-h2 {
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.slider-content {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    width: 458px;
+    margin-top: 34px;
+    margin-bottom: 32px;
+    line-height: 24px;
+}
+
+.button {
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    background-color: #ffffff;
+    width: 212px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+
+    display: inline-block;
+    text-decoration: none;
+
+    letter-spacing: 3.6px;
+
+}
+
+.button:hover {
+    color: #6c6c6c;
+}
+
+.button-arrow {
+    margin-left: 22px;
+    margin-bottom: 1px;
+}
+
+.pagination {
+    position: absolute;
+    width: 1170px;
+    bottom: 19px;
+    text-align: center;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: #c7c7c7;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.circle-active {
+    width: 40px;
+    height: 40px;
+    background-color: #212121;
+    margin-bottom: 0;
+}
+
+.circle:hover {
+    background-color: #212121;
+}
+
+/* ------------------------------------------- */
+.featured-header {
+    padding-top: 120px;
+}
+
+.menu-featured-list {
+    list-style: none;
+    float: left;
+}
+
+.menu-featured-link {
+    color: #6c6c6c;
+    font-size: 36px;
+    font-weight: 700;
+
+    padding-left: 11px;
+    padding-right: 22px;
+    padding-bottom: 21px;
+
+    border-bottom: 1px solid #6c6c6c;
+    text-decoration: none;
+}
+
+.menu-featured-link-active {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 19px;
+
+    border-bottom: 3px solid #212121;
+    text-decoration: none;
+}
+
+.featured-exploreall {
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #212121;
+    letter-spacing: 3.6px;
+    float: right;
+    padding-top: 16px;
+    text-decoration: none;
+}
+
+.featured-exploreall img {
+    padding-left: 12px;
+}
+
+.featured-catalog {
+    margin-top: 97px;
+    /*padding-top: 72px;*/
+
+    /* padding: 97px 0 120px 0; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-catalog-product {
+    /* padding-left: 30px; */
+    width: 270px;
+    height: 270px;
+
+    display: inline-block;
+    position: relative;
+
+}
+
+.featured-catalog-product:hover .featured-catalog-product-hover {
+    display: block;
+}
+
+.featured-catalog-product-hover {
+    background-image: url(img/back.svg);
+    display: none;
+    width: 270px;
+    height: 270px;
+
+    background-color: #fbfcfc;
+    /* border: 1px solid #e8e8e8; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.featured-catalog-product-hover .name {
+    margin-top: 19px;
+    margin-left: 63px;
+    color: #212121;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.featured-catalog-product-hover .text {
+    margin-top: 23px;
+    width: 206px;
+    height: 33px;
+
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 32px;
+    letter-spacing: -1px;
+}
+
+.button2 {
+    margin-left: 111px;
+    margin-top: 62px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 24px;
+    background-color: #ffffff;
+
+    width: 48px;
+    height: 48px;
+
+    line-height: 45px;
+    text-align: center;
+
+    display: inline-block;
+    text-decoration: none;
+
+    letter-spacing: 3.6px;
+
+}
+
+.button2:hover {
+    background-color: #c7c7c7;
+}
+
+.button2-arrow {
+    width: 12px;
+    height: 20px;
+    margin: 14px 18px;
+}
+
+/* ------------------------------------------------------- */
+.promo-product {
+    height: 683px;
+}
+
+.promo-product-left {
+    width: 683px;
+    height: 683px;
+    background-image: url(img/promo-img1.png);
+    float: left;
+
+}
+
+.promo-product-text {
+    padding-left: 51px;
+}
+
+.promo-product-left-text1 {
+    /* Style for "promo-product" */
+    padding-top: 228px;
+
+    color: #1e88e5;
+
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    /* Text style for "promo-product" */
+    color: #1e88e5;
+    letter-spacing: 1.8px;
+}
+
+.promo-product-left-h2 {
+    padding-top: 18px;
+    /* Style for "Fishnet Ch" */
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.promo-product-left-content {
+    width: 374px;
+    padding-top: 24px;
+    /* Style for "Seat and b" */
+    width: 374px;
+    height: 36px;
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.04px;
+    padding-bottom: 34px;
+}
+
+
+.promo-product-right {
+    width: 683px;
+    height: 683px;
+    background-image: url(img/promo-img.png);
+    float: left;
+}
+
+/* trending-products */
+.trending-products-header {
+    padding-top: 119px;
+}
+
+.trending-products-header-text {
+    /* Style for "Trending P" */
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    float: left;
+}
+
+.trending-products-header-exploreall {
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #212121;
+    letter-spacing: 3.6px;
+    float: right;
+    padding-top: 16px;
+    text-decoration: none;
+}
+
+.trending-products-header-exploreall img {
+    padding-left: 12px;
+}
+
+.trending-products-block {
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 770px;
+    width: 1170px;
+}
+
+/* ------------------------------------------------------- */
+
+.hotdeals-slider {
+    height: 800px;
+    background-image: url(img/slider.png);
+    position: relative;
+}
+
+.hotdeals-slider-text1 {
+
+    padding-top: 287px;
+    /* Style for "Hot deal" */
+
+    height: 13px;
+    color: #e53935;
+
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    /* Text style for "Hot deal" */
+
+    letter-spacing: 1.8px;
+}
+
+.hotdeals-slider-h2 {
+
+    padding-top: 22px;
+    /* Style for "Fishnet Ch" */
+
+    height: 43px;
+    color: #212121;
+    font-family: "Montserrat";
+    font-size: 62px;
+    font-weight: 200;
+    line-height: 72px;
+    text-transform: uppercase;
+}
+
+.hotdeals-slider-content {
+    /* Style for "Seat and b" */
+    padding-top: 34px;
+
+    height: 38px;
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    width: 458px;
+}
+
+.hotdeals-slider-text .button {
+    margin-top: 32px;
+
+}
+
+
+.hotdeals .pagination {
+    position: absolute;
+    width: 1366px;
+    bottom: 20px;
+    text-align: center;
+
+}
+
+
+.exclusive-product {
+    height: 810px;
+    width: 1170px;
+    display: flex;
+}
+
+/* */
+.exlusive-product-left {
+    margin-top: 120px;
+    width: 570px;
+    height: 570px;
+    background-image: url(img/product-1-lg.png);
+}
+
+.exclusive-product-small {
+    margin-top: 120px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 570px;
+    width: 570px;
+    align-content: space-between;
+}
+
+.exlusive-product-small-item {
+    height: 270px;
+    width: 270px;
+}
+
+/* ------------------------------------------------------- */
+.mobile-app {
+    height: 516px;
+    background-image: url(img/back-img.png);
+}
+
+.mobile-app-text {
+    padding-top: 125px;
+
+}
+
+.mobile-app-text-p {
+    /* Style for "mobile app" */
+
+    height: 13px;
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    /* Text style for "mobile app" */
+    color: #6c6c6c;
+    letter-spacing: 1.8px;
+
+}
+
+.mobile-app-text-find {
+    /* Style for "Find. Foll" */
+    width: 407px;
+    height: 116px;
+    color: #212121;
+    font-family: "Montserrat";
+    font-size: 62px;
+    font-weight: 100;
+    line-height: 72px;
+    text-transform: uppercase;
+
+    margin-top: 22px;
+    margin-left: 8px;
+    letter-spacing: -5px;
+
+}
+
+
+.mobile-app-text-content {
+    /* Style for "Save your" */
+    width: 413px;
+    height: 21px;
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 24px;
+
+    padding-top: 26px;
+    padding-left: 1px;
+    letter-spacing: -1px;
+}
+
+.mobile-app-stores {
+    padding-top: 33px;
+    ;
+}
+
+.mobile-app-stores .appstore {
+    margin-right: 10px;
+}
+
+/* ------------------------------------------------------- */
+.footer {
+    height: 384px;
+    margin-left: 97px;
+    margin-right: 98px;
+    padding-bottom: 30px;
+}
+
+.footer-upper {
+    width: 1171px;
+    height: 147px;
+    padding-top: 120px;
+}
+
+.footer-contact {
+    float: left;
+    width: 221px;
+    height: 139px;
+
+    padding-right: 80px;
+}
+
+.footer-contact-h2 {
+    /* Style for "Contact Us" */
+
+    height: 13px;
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* Text style for "C, ontact" */
+    letter-spacing: 1.8px;
+    padding-bottom: 24px;
+}
+
+.footer-contact-text {
+    /* Style for "132A Bridg" */
+    width: 221px;
+    height: 102px;
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.footer-useful {
+    float: left;
+    width: 422px;
+    height: 101px;
+    padding-right: 78px;
+}
+
+.footer-useful-h2 {
+    /* Style for "Useful Inf" */
+
+    height: 13px;
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* Text style for "U, seful I" */
+    letter-spacing: 1.8px;
+}
+
+.footer-useful-links-left {
+    padding-top: 25px;
+    float: left;
+    width: 132px;
+}
+
+.footer-useful-links-left a,
+.footer-useful-links-right a {
+    text-decoration: none;
+    float: left;
+}
+
+.footer-useful-links-left p {
+    /* Style for "Sales term" */
+    width: 132px;
+
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "Sales term" */
+    letter-spacing: 0.7px;
+}
+
+.footer-useful-links-right p {
+    /* Style for "Sales term" */
+    width: 187px;
+
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "Sales term" */
+    letter-spacing: 0.7px;
+}
+
+.footer-useful-links-right {
+    padding-top: 24px;
+    width: 187px;
+    float: left;
+    margin-left: 103px;
+}
+
+.stayintouch {
+    float: left;
+    width: 25%;
+    height: 147px;
+    width: 370px;
+}
+
+.stayintouch-h2 {
+    /* Style for "Let’s Stay" */
+
+    height: 13px;
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* Text style for "L, et’s St" */
+    letter-spacing: 1.8px;
+}
+
+.stayintouch-content {
+    padding-top: 24px;
+    /* Style for "Suscribe t" */
+    width: 363px;
+    height: 36px;
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.stayintouch-email {
+    position: relative;
+}
+
+.subscribe {
+    width: 370px;
+    height: 48px;
+    margin-top: 26px;
+}
+
+.subscribe input[type="email"] {
+    width: 370px;
+    height: 148px;
+    /* Style for "Suscribe t" */
+
+    height: 48px;
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+
+    padding-left: 19px;
+}
+
+.subscribe input[type="submit"] {
+    position: absolute;
+    background-image: url("img/paper-plane.svg");
+    background-repeat: no-repeat;
+    border: 0;
+    width: 21px;
+    height: 17px;
+    background-color: transparent;
+    right: 0;
+    top: 16px;
+}
+
+.copyright {
+    height: 28px;
+    width: 1171px;
+
+    padding-top: 67px;
+}
+
+.copyright div {
+    float: left;
+}
+
+.copyright-allrightsreserved {
+    width: 362px;
+    padding-right: 158px;
+
+    /* Style for "© Copyrigh" */
+    width: 362px;
+    height: 9px;
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "©,  Copyri" */
+    letter-spacing: 0.6px;
+}
+
+.terms {
+    width: 350px;
+    padding-left: 172px;
+
+    /* Style for "Terms & Co" */
+    width: 350px;
+    height: 12px;
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "T, erms &" */
+    letter-spacing: 0.6px;
+}
+
+/* Contact page ------------------------------------------------------------- */
+.contactpage .header {
+    padding-top: 63px;
+
+    height: 360px;
+    background-image: url(img/hero-back.svg);
+}
+
+.contactpage-text {
+    margin-top: 171px;
+    width: 343px;
+}
+
+.contactpage-text p {
+    /* Style for "Contact Us" */
+    width: 306px;
+    height: 43px;
+    color: #212121;
+    font-family: "Montserrat";
+    font-size: 62px;
+    font-weight: 200;
+    line-height: 72px;
+}
+
+.contactpage-boxes {
+    background-color: #ffffff;
+    height: 563px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 71px;
+
+}
+
+.contactpage-boxes-item {
+    width: 370px;
+    height: 370px;
+    text-align: center;
+
+    border: 1px solid black;
+}
+
+.contactpage-boxes-item-link {
+    display: inline-block;
+    padding-top: 48px;
+}
+
+.contactpage-boxes-item-link img {
+    widows: 38px;
+    height: 48px;
+}
+
+.contactpage-boxes-item-inner {
+    margin-top: 23px;
+    /* Style for "Phone: 190" */
+
+    height: 138px;
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    font-weight: 300;
+
+}
+
+.contactpage-boxes-item-state {
+    /* Style for "California" */
+    margin-top: 34px;
+    height: 16px;
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29.88px;
+    text-transform: uppercase;
+}
+
+.contactpage-boxes-item-phone,
+.contactpage-boxes-item-email {
+    /* Text style for "1900 - 123" */
+    color: #212121;
+    /* Text style for "Phone: , E" */
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.contactpage-boxes-item-phone-label,
+.contactpage-boxes-item-email-label,
+.contactpage-boxes-item-address-label {
+    font-weight: 700;
+    /* Text style for "12 W 1st S" */
+}
+
+.contactpage-footer {
+    background-color: #f7f7f7;
+    width: 1366px;
+
+
+}
+
+
+/* products --------------------------------*/
+.products-page-trending-products {
+    width: 1170px;
+    margin-left: 105px;
+    margin-right: 98px;
+}
+
+.products-page-products-block {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 1170px;
+    height: 1569px;
+}
+
+.products-page-products-block-item {
+    height: 370px;
+    width: 370px;
+}
+
+.trending-products-block-item {
+    height: 370px;
+    width: 370px;
+}
+
+/* products-page menu*/
+.products-page-featured-header {
+    height: 85px;
+    padding-top: 71px;
+}
+
+.products-page-menu-featured {
+
+    height: 32px;
+}
+
+.products-page-menu-block {
+
+    width: 643px;
+    height: 32px;
+}
+
+.products-page-menu-block::after {
+    border-bottom: 1px solid #6C6C6C;
+    width: 300px;
+    display: block;
+    content: "";
+
+}
+
+.products-page-menu-featured-list {
+    list-style: none;
+    float: left;
+    height: 30px;
+}
+
+.products-page-menu-featured-list-active {
+    border-bottom: 3px solid #212121;
+}
+
+
+
+
+.products-page-menu-featured-link {
+    color: #6c6c6c;
+    /* Style for "All" */
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "All" */
+
+    /* border-bottom: 1px solid #6c6c6c; */
+    text-decoration: none;
+
+    margin: 0 26px 0 7px;
+    height: 13px;
+    padding-bottom: 19px;
+}
+
+.products-page-menu-featured-link-active {
+    color: #6c6c6c;
+    /* Style for "All" */
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "All" */
+
+    padding-bottom: 19px;
+
+    text-decoration: none;
+}
+
+.showmore {
+    text-align: center;
+    margin-top: 71px;
+    margin-bottom: 140px;
+}
+
+.showmore img {
+    width: 42px;
+    height: 29px;
+
+
+}
+
+/* product-details-page */
+.product-details-page {
+    height: 119px;
+}
+
+.product-details-page .header {
+    padding-top: 63px;
+
+    height: 360px;
+    background-color: #ffffff;
+}
+
+.product-details-page-block {}
+
+.product-details-page-groups-menu-block {
+    width: 1366px;
+    height: 42px;
+    background-color: #f4f4f4;
+    padding-left: 360px;
+    padding-top: 28px;
+}
+
+.product-details-page-menu2 {
+    width: 647px;
+    height: 13px;
+}
+
+.product-details-page-menu2-link {
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 33px;
+
+}
+
+.product-details-page-menu2-link-active {
+    color: #212121;
+    letter-spacing: 1.8px;
+
+}
+
+.product-details-page-menu2-list {
+    list-style-type: none;
+    float: left;
+}
+
+.product-details-page-slider {
+    height: 968px;
+    width: 1366px;
+    padding-left: 98px;
+    padding-right: 97px;
+    padding-top: 72px;
+}
+
+.product-details-page-slider-preview {
+    float: left;
+}
+
+.product-details-page-slider-preview .big {
+    width: 570px;
+    height: 570px;
+}
+
+.product-details-page-slider-preview .small {
+    margin-top: 11px;
+    margin-left: 150px;
+}
+
+.product-details-page-slider-preview .small img {
+    margin-right: 10px;
+}
+
+.product-details-page-slider-content {
+    float: left;
+    padding-top: 42px;
+
+}
+
+.product-details-page-slider-content .text {
+    width: 499px;
+}
+
+.product-details-page-slider-content .h2 {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.product-details-page-slider-content .name {
+    text-align: center;
+    margin-top: 22px;
+    color: #e53935;
+
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-details-page-slider-content .price {
+    padding-top: 36px;
+    color: #212121;
+    font-size: 36px;
+    font-weight: 300;
+
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.redbutton {
+
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 35px;
+    background-color: #f44336;
+
+    width: 510px;
+    height: 71px;
+
+    line-height: 71px;
+    text-align: center;
+
+    display: inline-block;
+    text-decoration: none;
+
+    letter-spacing: 3.6px;
+
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    letter-spacing: 4.4px;
+
+    position: relative;
+    margin-top: 31px;
+}
+
+.redbutton:hover {
+    color: #6c6c6c;
+}
+
+.redbutton-arrow {
+    width: 15px;
+    height: 24px;
+
+    position: absolute;
+    margin-bottom: 24px;
+    margin-top: 23px;
+
+
+    margin-left: 28px;
+}
+
+.product-details-page-slider-content .text {
+    width: 499px;
+    margin-top: 49px;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 300;
+
+    letter-spacing: 0.4px;
+}
+
+.product-details-page-related-products {
+    width: 1169px;
+    
+}
+
+.products-details-page-related-products-header-left {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    float: left;
+}
+
+.products-details-page-related-products-header-right {
+    float: right;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #212121;
+    letter-spacing: 3.6px;
+}
+
+.product-details-page-related-products-header {
+    height: 27px;
+}
+
+.product-details-page-related-products-content {
+    padding-top: 68px;
+    height: 370px;
+    width: 1170px;
+    margin-bottom: 120px;
+}
+
+.product-details-page-related-products-content-item {
+    float:left;
+    width: 370px;
+    height: 370px;
+    margin-left: 30px;
+}
+
+.product-details-page-related-products-content-item:nth-child(1){
+    margin-left: 0px;
+}
